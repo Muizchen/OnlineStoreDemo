@@ -24,6 +24,10 @@ class OrderDetailViewController: UIViewController {
     @IBOutlet weak var trackingView: UIView!
     @IBOutlet weak var trackingLabel: UILabel!
     @IBOutlet weak var trackingTimeLabel: UILabel!
+    // Group Purchasing
+    @IBOutlet weak var GroupPurchasingView: UIView!
+    // Group Purchased
+    @IBOutlet weak var groupPurchasedView: UIView!
     // Shop
     @IBOutlet weak var shopView: UIView!
     @IBOutlet weak var shopNameLabel: UILabel!
@@ -36,6 +40,10 @@ class OrderDetailViewController: UIViewController {
     @IBOutlet weak var receiverLabel: UILabel!
     @IBOutlet weak var phoneLabel: UILabel!
     @IBOutlet weak var addressLabel: UILabel!
+    // Personal
+    @IBOutlet weak var personalView: UIView!
+    @IBOutlet weak var personalLabel: UILabel!
+    @IBOutlet weak var personalPhoneLabel: UILabel!
     // Vehicle
     @IBOutlet weak var vehicleView: UIView!
     @IBOutlet weak var vehicleLabel: UILabel!
