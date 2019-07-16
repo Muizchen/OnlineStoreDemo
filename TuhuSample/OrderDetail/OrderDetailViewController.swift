@@ -110,7 +110,7 @@ class OrderDetailViewController: UIViewController {
         goodsStackView.alignment = .fill
         goodsStackView.axis = .vertical
         goodsStackView.spacing = 0.5
-        for _ in 0...1 {
+        for _ in 0..<1 {
             let goodsView = OrderDetailGoodsView()
             // Todo
             goodsView.goods = GoodsModel()
@@ -119,11 +119,10 @@ class OrderDetailViewController: UIViewController {
         self.goodsStackView.insertArrangedSubview(goodsStackView, at: self.goodsStackView.arrangedSubviews.count)
         
         // Gifts
-        for _ in 0...1 {
-            let goodsView = OrderDetailGoodsView()
+        for _ in 0..<1 {
+            let giftView = OrderDetailGiftView()
             // Todo
-            goodsView.goods = GoodsModel()
-            giftStackView.insertArrangedSubview(goodsView, at: giftStackView.arrangedSubviews.count)
+            giftStackView.insertArrangedSubview(giftView, at: giftStackView.arrangedSubviews.count)
         }
         
         // Service

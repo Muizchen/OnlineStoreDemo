@@ -12,8 +12,13 @@ class OrderDetailGoodsView: UIView {
     
     @IBOutlet weak var iconImageView: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var offSiteLabel: UILabel!       // 非自营标签
     @IBOutlet weak var priceLabel: UILabel!
     @IBOutlet weak var countLabel: UILabel!
+    @IBOutlet weak var genuineView: UIView!         // 正品溯源
+    @IBOutlet weak var constructionView: UIView!    // 施工流程
+    @IBOutlet weak var oilCardView: UIView!         // OilCard
+    @IBOutlet weak var oilCardID: UILabel!
     
     convenience init() {
         self.init(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 86))
