@@ -50,6 +50,9 @@
 	<key>UIAppFonts</key>
 	<array>
 		<string>iconfont.ttf</string>
+		<string>tuhuregular2.0.ttf</string>
+		<string>tuhuregular2.0.otf</string>
+		<string>tuhumedium2.0.otf</string>
 	</array>
 </dict>
 </plist>
