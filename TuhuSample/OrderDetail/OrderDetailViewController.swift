@@ -86,9 +86,6 @@ class OrderDetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        self.navigationController?.isNavigationBarHidden = true
-        
         loadComponents()
     }
     
@@ -101,7 +98,7 @@ class OrderDetailViewController: UIViewController {
         super.viewWillDisappear(animated)
         self.navigationController?.setNavigationBarHidden(false, animated: true)
     }
-    
+
     @IBAction func back(_ sender: Any) {
         self.navigationController?.popViewController(animated: true)
     }
