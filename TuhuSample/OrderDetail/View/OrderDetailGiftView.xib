@@ -9,6 +9,11 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="tuhumedium2.0.otf">
+            <string>tuhumedium</string>
+        </array>
+    </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OrderDetailGiftView" customModule="TuhuSample" customModuleProvider="target"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -27,7 +32,7 @@
                     <rect key="frame" x="94" y="6" width="246" height="153"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="characterWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cqE-74-QeN">
-                            <rect key="frame" x="0.0" y="0.0" width="246" height="40"/>
+                            <rect key="frame" x="0.0" y="0.0" width="246" height="47"/>
                             <attributedString key="attributedText">
                                 <fragment content="镭射眼智能后视镜行车记录仪">
                                     <attributes>
@@ -68,7 +73,7 @@
                             <nil key="highlightedColor"/>
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="characterWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TQi-FM-Dqt">
-                            <rect key="frame" x="0.0" y="40" width="246" height="28"/>
+                            <rect key="frame" x="0.0" y="47" width="246" height="28"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="28" id="hvv-Vg-TA9"/>
                             </constraints>
@@ -98,15 +103,15 @@
                             <nil key="highlightedColor"/>
                         </label>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cdt-1o-RC8">
-                            <rect key="frame" x="0.0" y="68" width="246" height="30"/>
+                            <rect key="frame" x="0.0" y="75" width="246" height="30"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="￥345" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rhe-VY-XDU">
-                                    <rect key="frame" x="0.0" y="8" width="40.5" height="14"/>
+                                    <rect key="frame" x="0.0" y="8" width="37" height="14"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="14" id="UXh-Mj-CDP"/>
                                     </constraints>
-                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                    <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="fontDescription" name="tuhumedium" family="tuhumedium" pointSize="14"/>
+                                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="X1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lsf-31-TZu">
@@ -127,10 +132,10 @@
                             </constraints>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cLR-8h-SGV">
-                            <rect key="frame" x="0.0" y="98" width="246" height="55"/>
+                            <rect key="frame" x="0.0" y="105" width="246" height="48"/>
                             <subviews>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y0Q-CL-gAx">
-                                    <rect key="frame" x="154" y="8" width="80" height="35"/>
+                                    <rect key="frame" x="154" y="8" width="80" height="28"/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="80" id="hfn-tg-GFz"/>
                                     </constraints>
@@ -159,7 +164,6 @@
                 <constraint firstAttribute="trailing" secondItem="l7V-2y-91X" secondAttribute="trailing" constant="12" id="ErK-jz-Ldq"/>
                 <constraint firstItem="zyL-Sn-HVd" firstAttribute="leading" secondItem="0Kr-59-71O" secondAttribute="leading" constant="12" id="MEG-JY-q7P"/>
                 <constraint firstItem="l7V-2y-91X" firstAttribute="leading" secondItem="zyL-Sn-HVd" secondAttribute="trailing" constant="12" id="Yrw-VO-IM5"/>
-                <constraint firstAttribute="bottom" secondItem="zyL-Sn-HVd" secondAttribute="bottom" constant="8" id="juc-VC-oEJ"/>
             </constraints>
             <nil key="simulatedTopBarMetrics"/>
             <nil key="simulatedBottomBarMetrics"/>

@@ -10,6 +10,10 @@ import UIKit
 
 class OrderDetailViewController: UIViewController {
     
+    @IBOutlet weak var orderStatusLabel: UILabel!
+    @IBOutlet weak var orderDescriptionLabel: UILabel!
+    @IBOutlet weak var orderTypeImageView: UIImageView!
+    
     @IBOutlet weak var contentStackView: UIStackView!
     
     // Delivery Module
@@ -25,7 +29,7 @@ class OrderDetailViewController: UIViewController {
     @IBOutlet weak var trackingLabel: UILabel!
     @IBOutlet weak var trackingTimeLabel: UILabel!
     // Group Purchasing
-    @IBOutlet weak var GroupPurchasingView: UIView!
+    @IBOutlet weak var groupPurchasingView: UIView!
     // Group Purchased
     @IBOutlet weak var groupPurchasedView: UIView!
     // Shop
@@ -59,12 +63,17 @@ class OrderDetailViewController: UIViewController {
     @IBOutlet weak var giftStackView: UIStackView!
     // Service
     @IBOutlet weak var serviceStackView: UIStackView!
-    // Paymen
+    // Payment
     @IBOutlet weak var orderIdLabel: UILabel!
     @IBOutlet weak var orderCreateTimeLabel: UILabel!
     @IBOutlet weak var payMethodLabel: UILabel!
     @IBOutlet weak var deliveryMethodLabel: UILabel!
     @IBOutlet weak var paymentStatusLabel: UILabel!
+    // Invoice
+    @IBOutlet weak var invoiceStackView: UIStackView!
+    @IBOutlet weak var invoiceTypeLabel: UILabel!
+    @IBOutlet weak var invoiceCompanyLabel: UILabel!
+    @IBOutlet weak var invoiceContentLabel: UILabel!
     // Price
     @IBOutlet weak var totalPriceLabel: UILabel!
     @IBOutlet weak var deliveryPriceLabel: UILabel!
@@ -86,6 +95,13 @@ class OrderDetailViewController: UIViewController {
         self.navigationController?.isNavigationBarHidden = true
         
         loadComponents()
+    }
+    
+    @IBAction func back(_ sender: Any) {
+        self.navigationController?.popViewController(animated: true)
+    }
+    
+    @IBAction func more(_ sender: Any) {
     }
     
     @IBAction func getOnlineService(_ sender: Any) {
@@ -137,10 +153,6 @@ class OrderDetailViewController: UIViewController {
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
-    }
-    
-    @IBAction func back(_ sender: Any) {
-        self.navigationController?.popViewController(animated: true)
     }
 
 }

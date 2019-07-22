@@ -81,10 +81,10 @@ class TuhuColor {
     static var orange = UIColor(hexString: "f57c33")
 }
 
-public extension String {
+extension String {
     
     /// 返回字符串所表示的十六进制数值，支持"#"标识符， 支持 "-" 号
-    public var hexInteger: Int {
+    var hexInteger: Int {
         var temp = self.uppercased()
         if temp.hasPrefix("#") {
             temp = temp.replacingOccurrences(of: "#", with: "")
@@ -121,3 +121,32 @@ public extension String {
     
 }
 
+extension UIFont {
+    
+    static let tuhu = TuhuFont.self
+    
+    class func tuhuPrice(_ size: CGFloat) -> UIFont {
+        return TuhuFont.regularFont(size)
+    }
+    
+}
+
+class TuhuFont {
+    
+    class func arialFont(_ size: CGFloat) -> UIFont {
+        return UIFont.init(name: "Arial", size: size) ?? UIFont.systemFont(ofSize: size)
+    }
+    
+    class func regularFont(_ size: CGFloat) -> UIFont {
+        return UIFont(name: "tuhuregular", size: size) ?? UIFont.systemFont(ofSize: size)
+    }
+    
+    class func mediumFont(_ size: CGFloat) -> UIFont {
+        return UIFont(name: "tuhumedium", size: size) ?? UIFont.systemFont(ofSize: size)
+    }
+    
+    class func iconFont(_ size: CGFloat) -> UIFont {
+        return UIFont(name: "iconfont", size: size) ?? UIFont.systemFont(ofSize: size)
+    }
+    
+}

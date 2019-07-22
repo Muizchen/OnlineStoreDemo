@@ -20,6 +20,9 @@
 		2259FAFA22B1007F00A7A117 /* TrackingGoodsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2259FAF822B1007F00A7A117 /* TrackingGoodsCell.swift */; };
 		225CEE1822DD6FA20086DB39 /* OrderDetailGiftView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225CEE1722DD6FA20086DB39 /* OrderDetailGiftView.swift */; };
 		225CEE1A22DD6FB00086DB39 /* OrderDetailGiftView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 225CEE1922DD6FB00086DB39 /* OrderDetailGiftView.xib */; };
+		225CEE2222DDA9050086DB39 /* tuhumedium2.0.otf in Resources */ = {isa = PBXBuildFile; fileRef = 225CEE1F22DDA9040086DB39 /* tuhumedium2.0.otf */; };
+		225CEE2322DDA9050086DB39 /* tuhuregular2.0.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 225CEE2022DDA9040086DB39 /* tuhuregular2.0.ttf */; };
+		225CEE2422DDA9050086DB39 /* tuhuregular2.0.otf in Resources */ = {isa = PBXBuildFile; fileRef = 225CEE2122DDA9050086DB39 /* tuhuregular2.0.otf */; };
 		226C76922282CA2C00438C5B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226C76912282CA2C00438C5B /* AppDelegate.swift */; };
 		226C76942282CA2C00438C5B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226C76932282CA2C00438C5B /* ViewController.swift */; };
 		226C76972282CA2C00438C5B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 226C76952282CA2C00438C5B /* Main.storyboard */; };
@@ -49,6 +52,9 @@
 		2259FAF822B1007F00A7A117 /* TrackingGoodsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackingGoodsCell.swift; sourceTree = "<group>"; };
 		225CEE1722DD6FA20086DB39 /* OrderDetailGiftView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderDetailGiftView.swift; sourceTree = "<group>"; };
 		225CEE1922DD6FB00086DB39 /* OrderDetailGiftView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrderDetailGiftView.xib; sourceTree = "<group>"; };
+		225CEE1F22DDA9040086DB39 /* tuhumedium2.0.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = tuhumedium2.0.otf; sourceTree = "<group>"; };
+		225CEE2022DDA9040086DB39 /* tuhuregular2.0.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = tuhuregular2.0.ttf; sourceTree = "<group>"; };
+		225CEE2122DDA9050086DB39 /* tuhuregular2.0.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = tuhuregular2.0.otf; sourceTree = "<group>"; };
 		226C768E2282CA2C00438C5B /* TuhuSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TuhuSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		226C76912282CA2C00438C5B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		226C76932282CA2C00438C5B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -140,6 +146,9 @@
 				226C769D2282CA2D00438C5B /* Info.plist */,
 				2259FAEE22B0F84400A7A117 /* BridgingHeader.h */,
 				2233EA6B22DC1DCE0050A702 /* iconfont.ttf */,
+				225CEE1F22DDA9040086DB39 /* tuhumedium2.0.otf */,
+				225CEE2122DDA9050086DB39 /* tuhuregular2.0.otf */,
+				225CEE2022DDA9040086DB39 /* tuhuregular2.0.ttf */,
 			);
 			path = TuhuSample;
 			sourceTree = "<group>";
@@ -255,12 +264,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				226C769C2282CA2D00438C5B /* LaunchScreen.storyboard in Resources */,
+				225CEE2322DDA9050086DB39 /* tuhuregular2.0.ttf in Resources */,
 				2233EA6A22CF57E60050A702 /* OrderDetail.storyboard in Resources */,
 				2233EA6C22DC1DCE0050A702 /* iconfont.ttf in Resources */,
+				225CEE2222DDA9050086DB39 /* tuhumedium2.0.otf in Resources */,
 				226C76992282CA2D00438C5B /* Assets.xcassets in Resources */,
 				22227CE322B1159E009ADF83 /* Tracking.storyboard in Resources */,
 				226C76972282CA2C00438C5B /* Main.storyboard in Resources */,
 				2259FAF922B1007F00A7A117 /* TrackingGoodsCell.xib in Resources */,
+				225CEE2422DDA9050086DB39 /* tuhuregular2.0.otf in Resources */,
 				225CEE1A22DD6FB00086DB39 /* OrderDetailGiftView.xib in Resources */,
 				22DA7DF822DC608C00B52714 /* OrderDetailGoodsView.xib in Resources */,
 			);
