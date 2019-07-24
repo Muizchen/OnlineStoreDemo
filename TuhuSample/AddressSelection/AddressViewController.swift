@@ -38,7 +38,7 @@ extension AddressViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "StoredAddressCell", for: indexPath)
-        cell.textLabel?.text = "Num \(indexPath.row)"
+        cell.textLabel?.text = "Search address no.\(indexPath.row)"
         return cell
     }
     

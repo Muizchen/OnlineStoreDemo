@@ -169,6 +169,9 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="gRZ-RX-n6u" kind="show" id="wWe-uf-pUC"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="Hub-m1-gNS">
                                         <rect key="frame" x="0.0" y="485.5" width="414" height="44"/>
@@ -317,7 +320,7 @@
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qPT-lx-phX">
-                                                    <rect key="frame" x="384" y="18" width="14" height="14"/>
+                                                    <rect key="frame" x="386" y="19" width="12" height="12"/>
                                                     <fontDescription key="fontDescription" name="iconfont" family="iconfont" pointSize="12"/>
                                                     <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -695,6 +698,72 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YTx-W0-j7Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1686.9565217391305" y="332.8125"/>
+        </scene>
+        <!--Battery Address Search View Controller-->
+        <scene sceneID="3Yg-YP-keC">
+            <objects>
+                <viewController id="gRZ-RX-n6u" customClass="BatteryAddressSearchViewController" customModule="TuhuSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tOH-dB-xd6">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t5C-ty-Vfy">
+                                <rect key="frame" x="0.0" y="88" width="414" height="44"/>
+                                <subviews>
+                                    <searchBar contentMode="redraw" searchBarStyle="minimal" placeholder="请输入详细地址" translatesAutoresizingMaskIntoConstraints="NO" id="HxS-ec-ScP">
+                                        <rect key="frame" x="16" y="7" width="382" height="30"/>
+                                        <color key="backgroundColor" red="0.93333333330000001" green="0.93333333330000001" blue="0.93333333330000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="search"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <outlet property="delegate" destination="gRZ-RX-n6u" id="WsJ-lf-JtO"/>
+                                        </connections>
+                                    </searchBar>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="HxS-ec-ScP" secondAttribute="trailing" constant="16" id="2Uy-td-eNg"/>
+                                    <constraint firstAttribute="bottom" secondItem="HxS-ec-ScP" secondAttribute="bottom" constant="7" id="7z7-ic-z6h"/>
+                                    <constraint firstItem="HxS-ec-ScP" firstAttribute="leading" secondItem="t5C-ty-Vfy" secondAttribute="leading" constant="16" id="JU1-n1-HV9"/>
+                                    <constraint firstItem="HxS-ec-ScP" firstAttribute="top" secondItem="t5C-ty-Vfy" secondAttribute="top" constant="7" id="bau-Q7-0vV"/>
+                                    <constraint firstAttribute="height" constant="44" id="pxr-Q5-pru"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="fxk-uw-cXC">
+                                <rect key="frame" x="0.0" y="132" width="414" height="730"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="separatorColor" red="0.93333333330000001" green="0.93333333330000001" blue="0.93333333330000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="gRZ-RX-n6u" id="uly-T5-GwX"/>
+                                    <outlet property="delegate" destination="gRZ-RX-n6u" id="o75-g2-yhC"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="t5C-ty-Vfy" firstAttribute="trailing" secondItem="UoH-6k-e39" secondAttribute="trailing" id="6Cb-dp-LE4"/>
+                            <constraint firstItem="UoH-6k-e39" firstAttribute="bottom" secondItem="fxk-uw-cXC" secondAttribute="bottom" id="CLI-tg-I65"/>
+                            <constraint firstItem="fxk-uw-cXC" firstAttribute="leading" secondItem="UoH-6k-e39" secondAttribute="leading" id="DlW-wX-0kq"/>
+                            <constraint firstItem="UoH-6k-e39" firstAttribute="trailing" secondItem="fxk-uw-cXC" secondAttribute="trailing" id="U1E-P8-eCB"/>
+                            <constraint firstItem="t5C-ty-Vfy" firstAttribute="top" secondItem="UoH-6k-e39" secondAttribute="top" id="gOL-1P-lBR"/>
+                            <constraint firstItem="fxk-uw-cXC" firstAttribute="top" secondItem="t5C-ty-Vfy" secondAttribute="bottom" id="hMq-bB-kaK"/>
+                            <constraint firstItem="t5C-ty-Vfy" firstAttribute="leading" secondItem="UoH-6k-e39" secondAttribute="leading" id="tUn-gB-KYd"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="UoH-6k-e39"/>
+                    </view>
+                    <connections>
+                        <outlet property="searchBar" destination="HxS-ec-ScP" id="8kV-GM-WcO"/>
+                        <outlet property="tableView" destination="fxk-uw-cXC" id="LH8-RW-Ixs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="19T-fI-4r2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2423" y="-159"/>
         </scene>
     </scenes>
 </document>

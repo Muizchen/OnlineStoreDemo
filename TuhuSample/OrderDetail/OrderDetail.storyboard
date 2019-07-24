@@ -88,7 +88,7 @@
                                 </constraints>
                             </view>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JOB-wp-P4D">
-                                <rect key="frame" x="0.0" y="64" width="414" height="2532"/>
+                                <rect key="frame" x="0.0" y="64" width="414" height="2484"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y3z-uE-dp4" userLabel="Content View">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="2237.5"/>
@@ -1317,20 +1317,65 @@
                                     <constraint firstItem="y3z-uE-dp4" firstAttribute="top" secondItem="JOB-wp-P4D" secondAttribute="top" id="yDg-oV-0iV"/>
                                 </constraints>
                             </scrollView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l4O-D4-fNq">
+                                <rect key="frame" x="0.0" y="2548" width="414" height="48"/>
+                                <subviews>
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DHm-dq-h82">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="48"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lOD-vT-AzZ">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="48"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="48" id="Bgb-QW-dpk"/>
+                                                </constraints>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.99215686274509807" green="0.99215686274509807" blue="0.99215686274509807" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="lOD-vT-AzZ" firstAttribute="top" secondItem="DHm-dq-h82" secondAttribute="top" id="0ap-Wv-KUp"/>
+                                            <constraint firstAttribute="trailing" secondItem="lOD-vT-AzZ" secondAttribute="trailing" id="CR4-7n-Ha6"/>
+                                            <constraint firstItem="lOD-vT-AzZ" firstAttribute="width" secondItem="DHm-dq-h82" secondAttribute="width" id="SnM-Ao-3DD"/>
+                                            <constraint firstAttribute="bottom" secondItem="lOD-vT-AzZ" secondAttribute="bottom" id="dM9-aU-diY"/>
+                                            <constraint firstItem="lOD-vT-AzZ" firstAttribute="leading" secondItem="DHm-dq-h82" secondAttribute="leading" id="deb-Fm-y2q"/>
+                                            <constraint firstAttribute="height" constant="48" id="kTF-Wm-sRg"/>
+                                        </constraints>
+                                    </scrollView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WPI-Dd-fzV">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="0.5"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="0.5" id="12N-9x-Ati"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.99215686270000003" green="0.99215686270000003" blue="0.99215686270000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="WPI-Dd-fzV" secondAttribute="trailing" id="1GY-wF-NNg"/>
+                                    <constraint firstItem="WPI-Dd-fzV" firstAttribute="leading" secondItem="l4O-D4-fNq" secondAttribute="leading" id="OAX-CV-Q0g"/>
+                                    <constraint firstItem="WPI-Dd-fzV" firstAttribute="top" secondItem="l4O-D4-fNq" secondAttribute="top" id="RgL-os-Chi"/>
+                                    <constraint firstItem="DHm-dq-h82" firstAttribute="top" secondItem="l4O-D4-fNq" secondAttribute="top" id="Y1T-yW-OPA"/>
+                                    <constraint firstItem="DHm-dq-h82" firstAttribute="leading" secondItem="l4O-D4-fNq" secondAttribute="leading" id="gM3-uh-PZs"/>
+                                    <constraint firstAttribute="trailing" secondItem="DHm-dq-h82" secondAttribute="trailing" id="kgN-nw-5zO"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="JOB-wp-P4D" firstAttribute="trailing" secondItem="Zxd-AK-fyv" secondAttribute="trailing" id="3qR-EJ-wif"/>
+                            <constraint firstItem="l4O-D4-fNq" firstAttribute="leading" secondItem="Zxd-AK-fyv" secondAttribute="leading" id="6TH-rU-ihP"/>
                             <constraint firstItem="gch-zF-jnC" firstAttribute="trailing" secondItem="Zxd-AK-fyv" secondAttribute="trailing" id="Kzk-05-mDM"/>
+                            <constraint firstItem="Zxd-AK-fyv" firstAttribute="trailing" secondItem="l4O-D4-fNq" secondAttribute="trailing" id="LK9-4b-aFT"/>
                             <constraint firstItem="ggW-Lh-I33" firstAttribute="top" secondItem="Wqf-bZ-IUW" secondAttribute="top" id="Nbj-o4-v6K"/>
+                            <constraint firstItem="l4O-D4-fNq" firstAttribute="top" secondItem="JOB-wp-P4D" secondAttribute="bottom" id="TdG-nC-Hbq"/>
+                            <constraint firstItem="Zxd-AK-fyv" firstAttribute="bottom" secondItem="l4O-D4-fNq" secondAttribute="bottom" id="aBt-dg-Iek"/>
                             <constraint firstItem="Zxd-AK-fyv" firstAttribute="trailing" secondItem="ggW-Lh-I33" secondAttribute="trailing" id="dkO-D2-uPI"/>
                             <constraint firstItem="gch-zF-jnC" firstAttribute="top" secondItem="Wqf-bZ-IUW" secondAttribute="top" id="dy1-Db-cC1"/>
                             <constraint firstItem="JOB-wp-P4D" firstAttribute="top" secondItem="gch-zF-jnC" secondAttribute="bottom" id="gNy-AH-Pxz"/>
                             <constraint firstItem="gch-zF-jnC" firstAttribute="leading" secondItem="Zxd-AK-fyv" secondAttribute="leading" id="gub-LE-3ck"/>
+                            <constraint firstItem="l4O-D4-fNq" firstAttribute="top" secondItem="Zxd-AK-fyv" secondAttribute="bottom" constant="-48" id="hgg-iO-uSk"/>
                             <constraint firstItem="JOB-wp-P4D" firstAttribute="leading" secondItem="Zxd-AK-fyv" secondAttribute="leading" id="iX4-4F-Fuh"/>
                             <constraint firstItem="ggW-Lh-I33" firstAttribute="leading" secondItem="Zxd-AK-fyv" secondAttribute="leading" id="pMH-Sm-OJO"/>
                             <constraint firstItem="Zxd-AK-fyv" firstAttribute="top" secondItem="gch-zF-jnC" secondAttribute="bottom" constant="-44" id="rd9-Xx-VX7"/>
-                            <constraint firstAttribute="bottom" secondItem="JOB-wp-P4D" secondAttribute="bottom" id="vXB-1n-Jvv"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Zxd-AK-fyv"/>
                     </view>
@@ -1348,6 +1393,7 @@
                         <outlet property="deliveryStackView" destination="Pkn-Bo-Iki" id="3BB-I8-Oql"/>
                         <outlet property="discountPriceLabel" destination="CHq-2E-QyW" id="2i7-rT-X3D"/>
                         <outlet property="estimateTimeLabel" destination="Krd-we-Nmq" id="bzL-zM-g8J"/>
+                        <outlet property="footerViewTopConstraint" destination="TdG-nC-Hbq" id="CrD-S0-7x8"/>
                         <outlet property="giftStackView" destination="8yj-m1-KN3" id="acK-BL-hUD"/>
                         <outlet property="goodsStackView" destination="8g2-sg-jKp" id="zlg-42-5XA"/>
                         <outlet property="groupPurchasedView" destination="DlI-ue-LHt" id="Z3h-QI-aOP"/>

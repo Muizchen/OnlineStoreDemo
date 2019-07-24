@@ -84,6 +84,8 @@ class OrderDetailViewController: UIViewController {
     @IBOutlet weak var orderQRCodeView: UIView!
     @IBOutlet weak var orderQRCodeImageView: UIImageView!
     
+    @IBOutlet weak var footerViewTopConstraint: NSLayoutConstraint!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         loadComponents()
@@ -104,6 +106,7 @@ class OrderDetailViewController: UIViewController {
     }
     
     @IBAction func more(_ sender: Any) {
+        
     }
     
     @IBAction func getOnlineService(_ sender: Any) {

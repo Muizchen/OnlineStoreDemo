@@ -33,6 +33,11 @@
 		22DA7DF822DC608C00B52714 /* OrderDetailGoodsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22DA7DF722DC608C00B52714 /* OrderDetailGoodsView.xib */; };
 		22DA7DFA22DC642A00B52714 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DA7DF922DC642A00B52714 /* GradientView.swift */; };
 		22DA7DFD22DC718300B52714 /* GoodsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DA7DFC22DC718300B52714 /* GoodsModel.swift */; };
+		22E69F3522E8625B00F2A0C8 /* BatteryAddressSearchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E69F3322E8625B00F2A0C8 /* BatteryAddressSearchCell.swift */; };
+		22E69F3622E8625B00F2A0C8 /* BatteryAddressSearchCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22E69F3422E8625B00F2A0C8 /* BatteryAddressSearchCell.xib */; };
+		22E69F3822E8791300F2A0C8 /* BatteryAddressSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E69F3722E8791300F2A0C8 /* BatteryAddressSearchViewController.swift */; };
+		22E69F3B22E87B7B00F2A0C8 /* BatteryAddressInputCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E69F3922E87B7B00F2A0C8 /* BatteryAddressInputCell.swift */; };
+		22E69F3C22E87B7B00F2A0C8 /* BatteryAddressInputCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22E69F3A22E87B7B00F2A0C8 /* BatteryAddressInputCell.xib */; };
 		986759734683DD3C6107D95E /* Pods_TuhuSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C906A875609873485FCC4B46 /* Pods_TuhuSample.framework */; };
 /* End PBXBuildFile section */
 
@@ -67,6 +72,11 @@
 		22DA7DF722DC608C00B52714 /* OrderDetailGoodsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrderDetailGoodsView.xib; sourceTree = "<group>"; };
 		22DA7DF922DC642A00B52714 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		22DA7DFC22DC718300B52714 /* GoodsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodsModel.swift; sourceTree = "<group>"; };
+		22E69F3322E8625B00F2A0C8 /* BatteryAddressSearchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatteryAddressSearchCell.swift; sourceTree = "<group>"; };
+		22E69F3422E8625B00F2A0C8 /* BatteryAddressSearchCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BatteryAddressSearchCell.xib; sourceTree = "<group>"; };
+		22E69F3722E8791300F2A0C8 /* BatteryAddressSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatteryAddressSearchViewController.swift; sourceTree = "<group>"; };
+		22E69F3922E87B7B00F2A0C8 /* BatteryAddressInputCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatteryAddressInputCell.swift; sourceTree = "<group>"; };
+		22E69F3A22E87B7B00F2A0C8 /* BatteryAddressInputCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BatteryAddressInputCell.xib; sourceTree = "<group>"; };
 		3B927FFFDA6E524A51916578 /* Pods-TuhuSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TuhuSample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TuhuSample/Pods-TuhuSample.debug.xcconfig"; sourceTree = "<group>"; };
 		64C89C7EB10ECA4D0015D120 /* Pods-TuhuSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TuhuSample.release.xcconfig"; path = "Pods/Target Support Files/Pods-TuhuSample/Pods-TuhuSample.release.xcconfig"; sourceTree = "<group>"; };
 		C906A875609873485FCC4B46 /* Pods_TuhuSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TuhuSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -87,8 +97,8 @@
 		2233EA6122CEF6FA0050A702 /* OrderDetail */ = {
 			isa = PBXGroup;
 			children = (
-				2233EA6322CEF7340050A702 /* OrderDetailViewController.swift */,
 				2233EA6922CF57E60050A702 /* OrderDetail.storyboard */,
+				2233EA6322CEF7340050A702 /* OrderDetailViewController.swift */,
 				22DA7DFB22DC716400B52714 /* Model */,
 				22DA7DF422DC5DC600B52714 /* View */,
 			);
@@ -99,6 +109,8 @@
 			isa = PBXGroup;
 			children = (
 				226C76A32282D6F300438C5B /* AddressViewController.swift */,
+				22E69F3722E8791300F2A0C8 /* BatteryAddressSearchViewController.swift */,
+				22E69F3222E861D500F2A0C8 /* View */,
 			);
 			path = AddressSelection;
 			sourceTree = "<group>";
@@ -185,6 +197,17 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		22E69F3222E861D500F2A0C8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				22E69F3922E87B7B00F2A0C8 /* BatteryAddressInputCell.swift */,
+				22E69F3A22E87B7B00F2A0C8 /* BatteryAddressInputCell.xib */,
+				22E69F3322E8625B00F2A0C8 /* BatteryAddressSearchCell.swift */,
+				22E69F3422E8625B00F2A0C8 /* BatteryAddressSearchCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		35EE72B5A9D039B3525EDA60 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -264,7 +287,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				226C769C2282CA2D00438C5B /* LaunchScreen.storyboard in Resources */,
+				22E69F3622E8625B00F2A0C8 /* BatteryAddressSearchCell.xib in Resources */,
 				225CEE2322DDA9050086DB39 /* tuhuregular2.0.ttf in Resources */,
+				22E69F3C22E87B7B00F2A0C8 /* BatteryAddressInputCell.xib in Resources */,
 				2233EA6A22CF57E60050A702 /* OrderDetail.storyboard in Resources */,
 				2233EA6C22DC1DCE0050A702 /* iconfont.ttf in Resources */,
 				225CEE2222DDA9050086DB39 /* tuhumedium2.0.otf in Resources */,
@@ -335,11 +360,14 @@
 				2233EA6522CEF7340050A702 /* OrderDetailViewController.swift in Sources */,
 				22DA7DFD22DC718300B52714 /* GoodsModel.swift in Sources */,
 				226C76A42282D6F300438C5B /* AddressViewController.swift in Sources */,
+				22E69F3B22E87B7B00F2A0C8 /* BatteryAddressInputCell.swift in Sources */,
 				22DA7DFA22DC642A00B52714 /* GradientView.swift in Sources */,
 				22227CE722B1E704009ADF83 /* TrackingViewController.swift in Sources */,
 				22227CF022B1FA83009ADF83 /* TrackingAnnotationView.swift in Sources */,
+				22E69F3522E8625B00F2A0C8 /* BatteryAddressSearchCell.swift in Sources */,
 				225CEE1822DD6FA20086DB39 /* OrderDetailGiftView.swift in Sources */,
 				22DA7DF622DC607D00B52714 /* OrderDetailGoodsView.swift in Sources */,
+				22E69F3822E8791300F2A0C8 /* BatteryAddressSearchViewController.swift in Sources */,
 				2259FAFA22B1007F00A7A117 /* TrackingGoodsCell.swift in Sources */,
 				2259FAF122B0F9EE00A7A117 /* TableView.swift in Sources */,
 				22227CF222B251E3009ADF83 /* Extensions.swift in Sources */,
