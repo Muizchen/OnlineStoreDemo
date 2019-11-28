@@ -25,7 +25,8 @@ class BatteryAddressSearchViewController: UIViewController {
         searchField?.attributedPlaceholder = NSAttributedString.init(string: "请输入详细地址", attributes: [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 14), NSAttributedString.Key.foregroundColor: UIColor.tuhu.textLightGray])
         searchField?.borderStyle = .none
         searchField?.leftView = nil
-        searchBar.searchTextPositionAdjustment = UIOffset.init(horizontal: 10, vertical: 0)
+        searchBar.searchTextPositionAdjustment = UIOffset.init(horizontal: 2, vertical: 0)
+        searchBar.setPositionAdjustment(UIOffset(horizontal: 6, vertical: 0), for: .clear)
         searchBar.layer.cornerRadius = 15
         searchBar.layer.masksToBounds = true
     }
